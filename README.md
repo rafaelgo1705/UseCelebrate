@@ -1,10 +1,10 @@
-# UseCelebrate"
+# UseCelebrate
 
-Desenvolvi essa aplicação simples utilizando express para exemplificar algums formatações possíveis utilizando celebrate, um validator bem legal para NodeJS
+Desenvolvi essa aplicação simples utilizando express para exemplificar algumas formatações possíveis utilizando celebrate, um validator bem legal para NodeJS
 
 ## Executando o projeto
 
-Copiar env.example e renomeá-lo para .env
+Copiar .env.example e renomeá-lo para .env
 
 ### Instalar as dependências do projeto
 
@@ -20,24 +20,24 @@ $ yarn dev
 
 ## Como funciona
 
-### URL de chamada
+### URL da requisição
 
 ```
 POST http://localhost:3333/posts
 ```
 
-### Request enviada via Insomnia
+### Body enviado na requisição
 
 ```
 {
-	"title": "Nova publicação",
-	"description": "É uma publicação sobre validadores",
-	"year": "",
-	"author": {
-		"name": "Rafael",
-		"age": "",
-		"last_name": ""
-	}
+  "title": "Nova publicação",
+  "description": "É uma publicação sobre validadores",
+  "year": "",
+  "author": {
+    "name": "Rafael",
+    "age": "",
+    "last_name": ""
+  }
 }
 ```
 
@@ -50,5 +50,3 @@ POST http://localhost:3333/posts
   "validation": "string.empty"
 }
 ```
-
-### Obrigado por visualizar
